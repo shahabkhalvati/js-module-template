@@ -2,7 +2,7 @@
   "name": "js-module-template",
   "version": "0.0.0",
   "description": "template to be used when writing a new js module",
-  "main": "dist/budle.js",
+  "main": "dist/bundle.js",
   "repository": "git@github.com:shahabkhalvati/js-module-template.git",
   "author": "Shahab Khalvati <contact@shahabkhalvati.com>",
   "license": "MIT",
