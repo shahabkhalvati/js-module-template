@@ -1,6 +1,6 @@
 {
   "name": "js-module-template",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "template to be used when writing a new js module",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -17,9 +17,9 @@
     "build": "rollup -c",
     "dev": "watch 'npm run build' src",
     "test": "jest",
-    "test:watch": "yarn test --watch",
-    "coverage": "yarn run test --coverage",
-    "prepublishOnly": "yarn run build",
+    "test:watch": "npm run test --watch",
+    "coverage": "npm run test --coverage",
+    "prepublishOnly": "npm run build",
     "release": "np"
   },
   "standard": {
@@ -28,21 +28,22 @@
     }
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
-    "babel-jest": "^24.8.0",
-    "coveralls": "^3.0.5",
-    "jest": "^24.8.0",
-    "np": "^5.0.3",
-    "rollup": "^1.16.7",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.0.1",
-    "rollup-plugin-delete": "^1.0.0",
-    "rollup-plugin-filesize": "^6.1.1",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "coveralls": "^3.1.0",
+    "jest": "^26.4.2",
+    "np": "^6.5.0",
+    "rollup": "^2.26.11",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-filesize": "^9.0.2",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^5.1.1",
-    "standard": "^13.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "standard": "^14.3.4",
     "watch": "^1.0.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {}
 }

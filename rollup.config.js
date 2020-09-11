@@ -15,13 +15,13 @@ const plugins = [
   filesize()
 ]
 
-const external = []
+const external = [] // libraries you don't want included in export - peer dependencies
 
 export default [
   {
     input: 'src/index.js',
     output: {
-      name: 'fns',
+      name: 'validation',
       file: pkg.browser,
       format: 'umd'
     },
